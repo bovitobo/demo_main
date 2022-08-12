@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Projects</title>
+    {% load static %}
+    <link href="{% static 'css/main_page.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="menu-container">
+
+    <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+
+    <div class="hamburger-icon">
+        <label for="openmenu" id="hamburger-label">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <div class="menu-pane">
+
+        <nav>
+            <ul class="menu-links">
+                <li><a href="###">Vitaliy Utrobin</a><span id="QC-info">
+            <p>Miami, FL</p>
+            <p>+1 917-748-9494</p>
+            <p>vitaliy.utro@gmail.com</p>
+          </span>
+                </li>
+                <li>{% load static %}<a href="{% static "resume.pdf" %}">Resume</a></li>
+                <li><a href="/tweet_app">Django/Python: Project to demonstrate
+                    Database Many to Many Relationships</a></li>
+                <li><a href="/rest">Django REST Framework (DRFP) Demo</a></li>
+                <li><a href="/chat">Django Channels Demo</a></li>
+            </ul>
+
+        </nav>
+    </div>
+    <div class="body-text">
+        <h1>Code Examples</h1>
+        <h2>2022</h2>
+        <p>Made with Python, Django, DRF, Java Script</p>
+    </div>
+</div>
+
+</body>
+</html>
